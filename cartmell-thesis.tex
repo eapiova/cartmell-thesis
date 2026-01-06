@@ -1,25 +1,37 @@
-\documentclass[11pt,a4]{amsbook}
+\documentclass[12pt]{amsbook}
 
+%% Font/output handling
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+%% General math packages
 \usepackage{amsmath}
 \usepackage{stmaryrd}
+\usepackage{mathpartir}
+\usepackage{tikz-cd}
 
+%% Bibliography
+\usepackage[style=numeric]{biblatex}
+\usepackage{lumsdaine-biblatex-misc}
+\addbibresource{cartmell-bib.bib}
+
+%% Geometry adjustment
+\usepackage{geometry}
+
+%% General style packages
 \usepackage{xcolor}
 \definecolor{darkgreen}{rgb}{0,0.45,0}
 \definecolor{darkred}{rgb}{0.75,0,0}
 \definecolor{darkblue}{rgb}{0,0,0.6}
 \usepackage[colorlinks,citecolor=darkgreen,linkcolor=darkred,urlcolor=darkblue]{hyperref}
-
-\usepackage{microtype}
-\usepackage{lipsum}
-\usepackage{mathpartir}
-\usepackage{tikz-cd}
 \usepackage[shortlabels,inline]{enumitem}
-
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{lipsum}
 
-\include{cartmell-style}
-\include{cartmell-macros}
+
+\input{cartmell-style}
+\input{cartmell-macros}
 
 %%
 %% PDF metadata
@@ -49,9 +61,9 @@
 \begin{center}
   ~ \\
   \vspace{3cm}
-  {\Large\textsc{Generalised Algebraic Theories  \\ and \\ Contextual Categories}}\\
+  {\Large\textsc{Generalised Algebraic Theories \\ and \\ Contextual Categories \\ ~ }} \\
   \vspace{3cm}
-  {\large\textbf{by \\ J. W. Cartmell}}\\
+  by \\ J. W. Cartmell \\
   \vspace{7cm}
   Submitted for the degree of D.Phil.\\ Oxford University \\ 1978 \\
 \end{center}
@@ -61,9 +73,9 @@
 \thispagestyle{empty}
 \begin{center}
 \textbf{Acknowledgement} \\
-I am indebted to Professor Dana Scott \\ for supervision, criticism and direction.
+I am indebted to Professor Dana Scott \\ for supervision, criticism and direction. \\
 \vspace{15cm}
-\LaTeX version in preparation by the HoTT Group \\ 2014
+\LaTeX{} version in preparation \\ \url{https://github.com/peterlefanulumsdaine/cartmell-thesis} \\ Compiled \today
 \end{center}
 
 \clearpage
@@ -92,12 +104,14 @@ I am indebted to Professor Dana Scott \\ for supervision, criticism and directio
 
 \backmatter
 
+\chapter*{Transcription note}
+\input{transcription-note.tex}
+
 %% Bibliography Info
 
-\bibliographystyle{amsalphaurlmod}
-\bibliography{cartmell-bib}
+\nocite{*}
 
-
+\printbibliography
 
 \end{document}
 

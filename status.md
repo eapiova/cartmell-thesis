@@ -1,0 +1,72 @@
+Status overview, contribution sign-up, and to-do list 
+====
+
+# Status overview
+
+The list below gives a section-by-section overview of the draft status.  Some expected statuses are
+- *none*
+- *OCR* (first draft automatically populated from OCR, not yet human-edited)
+- *BOOKED [name]* (*name* is intending to work on section)
+- *IN PROGRESS [name]* (*name* has started working on section)
+- *ROUGH [name(s)]* (rough human-edited draft complete, but significant formatting or other issues still outstanding)
+- *DONE [name(s)]* (good draft done, modulo final proofreading + consistency checks)
+
+Of course this is all flexible — anything self-explanatory is fine, really.
+
+Once a section is *DONE* or *POLISHED*, anyone who has carefully read it can add *PROOFED [nameX]*, so we can ensure that (if possible) each section gets proofread by at least one additional person.
+
+Suggestion: to start with, leave space for people to work in contiguous blocks.  E.g. if person A has just done sections 1.1–1.5 and has 1.6 booked, then person B should not book 1.7 or 1.8; person B should start contributing at, say, 1.10 or 2.1.  Of course, once we are nearly done and filling in smaller gaps, this no longer make sense.
+
+- Preface: DONE [pll]
+- 1.0 DONE [pll]
+- 1.1 ROUGH [pll]
+- 1.2 ROUGH [pll]
+- 1.3 DONE [pll]
+- 1.4 DONE [pll]
+- 1.5 ROUGH [nathan guermond]
+- 1.6 ROUGH [nathan]
+- 1.7 ROUGH [nathan]
+- 1.8 ROUGH [nathan]
+- 1.9 ROUGH [nathan]
+- 1.10 ROUGH [nathan]
+- 1.11 ROUGH [nathan]
+- 1.12 OCR 
+- 1.13 OCR 
+- 1.14 OCR 
+- 2.1 ROUGH [JL]
+- 2.2 ROUGH [JL]
+- 2.3 IN PROGRESS [JL]
+- 2.4 OCR
+- 2.5 OCR 
+- 3.0 OCR 
+- 3.1 OCR 
+- 3.2 OCR 
+- 3.3 OCR 
+- 3.4 OCR 
+- 3.5 OCR 
+
+# Todo list
+
+## Infrastructure/organisation improvement
+
+- reduce font size in margin notes
+- add macro for inline transcription notes
+- improve/rationalise layout on title/dedication pages, and consider moving transcription statement to main title page
+- fix theorem numbering to follow C’s practice: most un-numbered, numbered items following e.g. “Lemma 1, Lemma 2, Corollary 3” within each chapter
+- add zref-clever for better internal links, and set up to match C’s style
+- set up alignment/spacing of enumerate/itemize globally (to look decent and roughly match C’s style)
+- consider setting up chapter/section headings to better match C’s style
+
+## Content tasks
+
+(besides the implicit ones of going through content to get each section to “DONE” status above)
+
+- finish adding bib info for all items
+- (once all bib info added) check bib info for style consistency
+
+## Consistency sweeps
+
+These should *not* be removed, as they may need re-checking periodically for new content
+
+- overful hboxes
+- spellchecking
